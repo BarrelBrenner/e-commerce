@@ -14,13 +14,13 @@ through: {
 });
 
 // Categories have many Products
-Category.hasMany(Product, {
-  foreignKey: 'category_id',
-  through: {
-  model: Product,
-  unique: false,
-  },
-});
+//Category.hasMany(Product, {
+  //foreignKey: 'category_id',
+  //through: {
+  //model: Product,
+  //unique: false,
+  //},
+//});
 
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
