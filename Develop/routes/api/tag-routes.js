@@ -26,7 +26,7 @@ router.get('/:id', async (req, res) => {
     if (!keyData) {res.status(404).json({ message: "Cannot find tags with this id." });
       return;
     }
-    res.status(200).json(data);
+    res.status(200).json(keyData);
   } catch (err) {
     res.status(500).json(err);
   }
